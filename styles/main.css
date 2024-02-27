@@ -1,32 +1,38 @@
-.container-carrousel{
-    display: flex;
-    flex-direction: row;
+body{
     overflow-x: hidden;
-    position: absolute;
-    left: calc(50% - 135px);
-    /* left: calc(50% - 85px); */
-
-    .container-image{
-        display: flex;
-        flex-direction: column;
-        padding: 0 20px;
-        height: 400px;
-        justify-content: center;
-        .image{
-            width: 150px;
-            height: 200px;
-        }
-
-        &.focus{
-            /* transform: scale(1.5); */
-            .image{
-                width: 230px;
-                height: 300px;
+    main{
+        overflow-x: hidden;
+        .container-carrousel{
+            display: flex;
+            flex-direction: row;
+            overflow-x: hidden;
+            position: absolute;
+            left: calc(50% - 135px);
+        
+            .container-image{
+                display: flex;
+                flex-direction: column;
+                height: 400px;
+                width: 190px;
+                justify-content: center;
+                align-items: center;
+                .image{
+                    width: 150px;
+                    height: 200px;
+                }
+        
+                &.focus{
+                    width: 270px;
+                    .image{
+                        width: 230px;
+                        height: 300px;
+                    }
+                }
+                .description{
+                    width: 100%;
+                    text-align: center;
+                }
             }
-        }
-        .description{
-            width: 100%;
-            text-align: center;
         }
     }
 }
